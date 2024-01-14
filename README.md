@@ -27,7 +27,7 @@ This project analyzes critic and user review scores along with sales data for th
 ## **Insights**
 
 + The years with the **highest average critic** and **user scores**
-+ The** difference between critic** and **user-preferred years**
++ The **difference between critic** and **user-preferred years**
 + **Peak sales years** and **how they align with top-rated years**
   
 
