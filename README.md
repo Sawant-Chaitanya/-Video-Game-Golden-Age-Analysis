@@ -10,13 +10,31 @@ This project analyzes critic and user review scores along with sales data for th
 
 ### The analysis uses two datasets:
 
-> **_game_sales_** - Contains game name, platform, publisher, developer, total units sold, and release year for the top 400 games by sales.
-> **_reviews_** - Contains game name, Metacritic critic, and user scores for the top 400 games.
+ ### game_sales
+
+| column     | type    | meaning                          |
+|------------|---------|----------------------------------|
+| game       | varchar | Name of the video game           |
+| platform   | varchar | Gaming platform                  |
+| publisher  | varchar | Game publisher                   |
+| developer  | varchar | Game developer                   |
+| games_sold | float   | Number of copies sold (millions) |
+| year       | int     | Release year                     |
+
+‎‏‏‎ ‎
+ ### reviews
+
+| column      | type    | meaning                          |
+|-------------|---------|----------------------------------|
+| game        | varchar | Name of the video game           |
+| critic_score| float   | Critic score according to Metacritic |
+| user_score  | float   | User score according to Metacritic  |
+
 
 
 ## **Analysis**
 
-### The Jupyter Notebook walks through the key analysis steps:
+#### The Jupyter Notebook walks through the key analysis steps:
 + Joining the game sales and reviewing datasets
 + Calculating average critic and user scores by year
 + Identifying peak years based on the highest average scores
@@ -32,7 +50,7 @@ This project analyzes critic and user review scores along with sales data for th
   
 
 ## **Contents**
-The repository contains:
+#### The repository contains:
 
 + Jupyter Notebook with data preparation, analysis, and visualizations
 + CSV files of the cleaned datasets
